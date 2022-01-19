@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "PX8eS3I0u9GiZR8hosygpI1X4nxJCuGoy1ApbaHMdTdOjqqoWQYQyxJq4pzOsMchC8gvoYTrHfH8uVOK2P2k8w==",
+  "success": true,
+  "projectFilePath": "/Users/ahmetcanakdas/Projects/RabbitMqWorkspaceNet5/Publisher/Publisher.csproj",
+  "expectedPackageFiles": [
+    "/Users/ahmetcanakdas/.nuget/packages/rabbitmq.client/6.2.1/rabbitmq.client.6.2.1.nupkg.sha512",
+    "/Users/ahmetcanakdas/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/ahmetcanakdas/.nuget/packages/system.threading.channels/4.7.1/system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
