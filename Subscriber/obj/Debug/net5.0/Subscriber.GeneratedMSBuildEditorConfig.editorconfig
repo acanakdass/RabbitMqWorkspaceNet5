@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Subscriber
-build_property.ProjectDir = /Users/ahmetcanakdas/Projects/RabbitMqWorkspace/Subscriber/
+build_property.ProjectDir = /Users/ahmetcanakdas/Projects/RabbitMqWorkspaceNet5/Subscriber/

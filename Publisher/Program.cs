@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using RabbitMQ.Client;
@@ -12,21 +13,46 @@ namespace Publisher
 
 
             //FanoutExchange();
-            TopicExchange();
-
+            //TopicExchange();
+            HeaderExchange();
 
 
         }
 
-
-
-
         enum LogNames
         {
-            Critical=1,
-            Error=2,
-            Warning=3,
-            Info=4
+            Critical = 1,
+            Error = 2,
+            Warning = 3,
+            Info = 4
+        }
+
+
+        static void HeaderExchange()
+        {
+            //HEADER EXCHANGE//
+            var factory = new ConnectionFactory();
+            factory.HostName = "localhost";
+            using var connection = factory.CreateConnection();
+            var channel = connection.CreateModel();
+
+            channel.ExchangeDeclare("header-exchange", durable: true, type: ExchangeType.Headers);
+
+            Dictionary<string, object> headers = new Dictionary<string, object>();
+
+            headers.Add("format", "pdf");
+            headers.Add("shape", "a4");
+
+            var properties = channel.CreateBasicProperties();
+            properties.Headers = headers;
+
+            var msg = Encoding.UTF8.GetBytes("Header message");
+            channel.BasicPublish("header-exchange", string.Empty, properties, msg);
+
+            Console.WriteLine("Message Sent");
+
+
+            Console.ReadLine();
         }
 
 
@@ -77,7 +103,7 @@ namespace Publisher
                 var routeKey = $"route-{x}";
                 var queueName = $"direct-queue-{x}";
                 channel.QueueDeclare(queueName, true, false, false);
-                channel.QueueBind(queueName, "logs-direct",routeKey,null);
+                channel.QueueBind(queueName, "logs-direct", routeKey, null);
             });
 
             Enumerable.Range(1, 50).ToList().ForEach(x =>

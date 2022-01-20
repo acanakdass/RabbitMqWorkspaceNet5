@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading;
@@ -12,11 +13,54 @@ namespace Subscriber
         static void Main(string[] args)
         {
             //subscribeFanoutExchange();
-            subscribTopicExchange();
+            //subscribeTopicExchange();
+            subscribeHeaderExchange();
         }
 
+        private static void subscribeHeaderExchange()
+        {
+            var factory = new ConnectionFactory();
+            factory.HostName = "localhost";
+            using var connection = factory.CreateConnection();
+            var channel = connection.CreateModel();
 
-        private static void subscribTopicExchange()
+
+            channel.ExchangeDeclare("header-exchange", durable: true, type: ExchangeType.Headers);
+
+            //channel.BasicQos(0, 1, false);
+
+            var queueName = channel.QueueDeclare().QueueName;
+
+            var consumer = new EventingBasicConsumer(channel);
+
+            var headers = new Dictionary<string, object>();
+
+            headers.Add("format", "pdf");
+            headers.Add("shape", "a4");
+            headers.Add("x-match", "all");
+
+            channel.QueueBind(queueName, "header-exchange", String.Empty, headers);
+ 
+            channel.BasicConsume(queueName, false, consumer);
+
+            Console.WriteLine($"Listening queue: {queueName}...");
+
+            consumer.Received += (object sender, BasicDeliverEventArgs e) =>
+            {
+                Thread.Sleep(200);
+                var message = Encoding.UTF8.GetString(e.Body.ToArray());
+                Console.WriteLine("Gelen Mesaj:" + message);
+
+                //File.AppendAllText("log-warning.txt", message + "\n");
+
+                channel.BasicAck(e.DeliveryTag, true);
+            };
+
+
+            Console.ReadLine();
+        }
+
+        private static void subscribeTopicExchange()
         {
             var factory = new ConnectionFactory();
             factory.HostName = "localhost";
@@ -64,7 +108,7 @@ namespace Subscriber
 
             var consumer = new EventingBasicConsumer(channel);
 
-            channel.BasicConsume(warningQueueName,false,consumer);
+            channel.BasicConsume(warningQueueName, false, consumer);
 
             Console.WriteLine($"Listening queue: {warningQueueName}...");
 
@@ -76,7 +120,7 @@ namespace Subscriber
 
                 //File.AppendAllText("log-warning.txt", message + "\n");
 
-                channel.BasicAck(e.DeliveryTag,true);
+                channel.BasicAck(e.DeliveryTag, true);
             };
 
 
@@ -114,8 +158,6 @@ namespace Subscriber
 
             Console.ReadLine();
         }
-
-
 
         private static void subscribeQueue()
         {

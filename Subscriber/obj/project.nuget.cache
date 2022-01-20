@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vcbpEPB4qJ4IwKvQ0MXQtuFT4SMx4pFWan9iFNg9n1Tcdn684AUb1RcOYfFYpAeuNroK7Q83ZCc3rLYuxkSZpQ==",
+  "dgSpecHash": "SrFdSi8wEuzR8CqEuaplbE/9zmut4t2k8Gqzb0CsNnUjofQPrPz/XYcDXS+6AtY+Exc1Z6U2/dVa7wtC7K8cWg==",
   "success": true,
-  "projectFilePath": "/Users/ahmetcanakdas/Projects/RabbitMqWorkspace/Subscriber/Subscriber.csproj",
+  "projectFilePath": "/Users/ahmetcanakdas/Projects/RabbitMqWorkspaceNet5/Subscriber/Subscriber.csproj",
   "expectedPackageFiles": [
     "/Users/ahmetcanakdas/.nuget/packages/rabbitmq.client/6.2.1/rabbitmq.client.6.2.1.nupkg.sha512",
     "/Users/ahmetcanakdas/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",

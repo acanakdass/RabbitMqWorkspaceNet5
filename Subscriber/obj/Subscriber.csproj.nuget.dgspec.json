@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ahmetcanakdas/Projects/RabbitMqWorkspace/Subscriber/Subscriber.csproj": {}
+    "/Users/ahmetcanakdas/Projects/RabbitMqWorkspaceNet5/Subscriber/Subscriber.csproj": {}
   },
   "projects": {
-    "/Users/ahmetcanakdas/Projects/RabbitMqWorkspace/Subscriber/Subscriber.csproj": {
+    "/Users/ahmetcanakdas/Projects/RabbitMqWorkspaceNet5/Subscriber/Subscriber.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ahmetcanakdas/Projects/RabbitMqWorkspace/Subscriber/Subscriber.csproj",
+        "projectUniqueName": "/Users/ahmetcanakdas/Projects/RabbitMqWorkspaceNet5/Subscriber/Subscriber.csproj",
         "projectName": "Subscriber",
-        "projectPath": "/Users/ahmetcanakdas/Projects/RabbitMqWorkspace/Subscriber/Subscriber.csproj",
+        "projectPath": "/Users/ahmetcanakdas/Projects/RabbitMqWorkspaceNet5/Subscriber/Subscriber.csproj",
         "packagesPath": "/Users/ahmetcanakdas/.nuget/packages/",
-        "outputPath": "/Users/ahmetcanakdas/Projects/RabbitMqWorkspace/Subscriber/obj/",
+        "outputPath": "/Users/ahmetcanakdas/Projects/RabbitMqWorkspaceNet5/Subscriber/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ahmetcanakdas/.config/NuGet/NuGet.Config"
+          "/Users/ahmetcanakdas/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.devexpress.com/SFJMRlAYXz1xzIVLqWGT3vAogquhDpe3vfxZirNhvzqISX9XTh/api": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -59,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/5.0.404/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }

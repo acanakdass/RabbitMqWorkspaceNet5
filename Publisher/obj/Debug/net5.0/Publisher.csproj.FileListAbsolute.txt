@@ -16,7 +16,6 @@
 /Users/ahmetcanakdas/Projects/RabbitMqWorkspace/Publisher/obj/Debug/net5.0/Publisher.pdb
 /Users/ahmetcanakdas/Projects/RabbitMqWorkspace/Publisher/obj/Debug/net5.0/Publisher.genruntimeconfig.cache
 /Users/ahmetcanakdas/Projects/RabbitMqWorkspace/Publisher/bin/Debug/net5.0/Publisher
-/Users/ahmetcanakdas/Projects/RabbitMqWorkspaceNet5/Publisher/bin/Debug/net5.0/Publisher
 /Users/ahmetcanakdas/Projects/RabbitMqWorkspaceNet5/Publisher/bin/Debug/net5.0/Publisher.deps.json
 /Users/ahmetcanakdas/Projects/RabbitMqWorkspaceNet5/Publisher/bin/Debug/net5.0/Publisher.runtimeconfig.json
 /Users/ahmetcanakdas/Projects/RabbitMqWorkspaceNet5/Publisher/bin/Debug/net5.0/Publisher.runtimeconfig.dev.json
