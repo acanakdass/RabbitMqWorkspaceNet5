@@ -121,13 +121,14 @@
       "outputPath": "/Users/ahmetcanakdas/Projects/RabbitMqWorkspaceNet5/Subscriber/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/ahmetcanakdas/.nuget/NuGet/NuGet.Config"
+        "/Users/ahmetcanakdas/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.devexpress.com/SFJMRlAYXz1xzIVLqWGT3vAogquhDpe3vfxZirNhvzqISX9XTh/api": {}
       },
       "frameworks": {
         "net5.0": {
@@ -165,7 +166,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/5.0.404/RuntimeIdentifierGraph.json"
       }
     }
   }

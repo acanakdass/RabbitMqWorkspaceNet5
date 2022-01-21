@@ -46,6 +46,8 @@ namespace Publisher
             var properties = channel.CreateBasicProperties();
             properties.Headers = headers;
 
+            properties.Persistent = true;
+
             var msg = Encoding.UTF8.GetBytes("Header message");
             channel.BasicPublish("header-exchange", string.Empty, properties, msg);
 

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Publisher", "Publisher\Publ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subscriber", "Subscriber\Subscriber.csproj", "{1452D863-7778-48C3-B493-C58C01172C7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watermark", "Watermark\Watermark.csproj", "{F589C614-D27A-4319-B0E0-623F29D2D0F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1452D863-7778-48C3-B493-C58C01172C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1452D863-7778-48C3-B493-C58C01172C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1452D863-7778-48C3-B493-C58C01172C7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F589C614-D27A-4319-B0E0-623F29D2D0F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F589C614-D27A-4319-B0E0-623F29D2D0F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F589C614-D27A-4319-B0E0-623F29D2D0F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F589C614-D27A-4319-B0E0-623F29D2D0F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
